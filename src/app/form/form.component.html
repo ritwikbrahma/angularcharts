@@ -1,0 +1,41 @@
+
+<html>
+  <body>
+ <form>
+    <style type="text/css">
+      body{
+        background:#AEE4FF;
+      }
+
+
+
+      </style>
+    <span>TYPE OF CHART:
+      <input #type><br>
+    </span>
+    <span>TITLE:
+      <input #title><br>
+    </span>
+    <span>xAxis items:
+      <input #xaxis><br>
+    </span>
+    <span>yAxis title:
+      <input #yaxis><br>
+    </span>
+    <span>Name:
+      <input #name><br>
+    </span>
+    <span>data:
+      <input type="text" #data>
+    </span>
+  </form>
+
+
+<div>
+  <button (click)="addSeries(type.value,title.value,xaxis.value,yaxis.value,name.value,data.value)">Add Series</button>
+</div>
+<div #chartTarget>
+  chart target
+</div>
+</body>
+</html>
